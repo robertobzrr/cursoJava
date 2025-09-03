@@ -1,4 +1,4 @@
-package aula02_processamentoDeDados_Casting;
+package Section04;
 
 public class areaTrapezio {
     public static void main(String[] args) {
@@ -12,8 +12,6 @@ public class areaTrapezio {
         float area = (b+B)/2f*h;
 
         System.out.printf("Área = %.2f", area);
-
-        //nota-se que seria mais claro e completo usar double, mas usei INT por ainda ser assunto de revisão.
 
 
     }

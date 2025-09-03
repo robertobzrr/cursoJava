@@ -1,6 +1,5 @@
-package aula02_processamentoDeDados_Casting;
+package Section04;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class entradaDeDados_Scanner {
@@ -11,13 +10,18 @@ public class entradaDeDados_Scanner {
 
         String nome;
         int idade;
+        double y;
 
         System.out.print("Digite seu nome: ");
         nome = sc.nextLine();
         System.out.print("Digite sua idade: ");
         idade = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Digite qualquer valor numérico apenas para consumir o buffer do nextInt acima: ");
+        y = sc.nextDouble();
+        sc.nextLine();
 
-        System.out.printf("Nome: %s%nIdade: %d", nome, idade);
+        System.out.printf("Nome: %s%nIdade: %d%nValor aleatório: %.2f", nome, idade, y);
 
 
 
