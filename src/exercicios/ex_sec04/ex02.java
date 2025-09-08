@@ -1,8 +1,8 @@
-package Section04;
+package exercicios.ex_sec04;
 import java.util.Scanner;
 
 
-public class exercicio_02 {
+public class ex02 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
