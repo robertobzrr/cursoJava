@@ -1,4 +1,4 @@
-package exercicios.ex_sec06;
+package exercicios.ex_sec06.ex_while;
 import java.util.Scanner;
 
 public class ex11 {

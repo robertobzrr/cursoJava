@@ -1,4 +1,4 @@
-package exercicios.ex_sec06;
+package exercicios.ex_sec06.ex_ifelse;
 import java.util.Scanner;
 
 public class ex02 {
@@ -21,5 +21,6 @@ public class ex02 {
 
 
         sc.close();
+
     }
 }
