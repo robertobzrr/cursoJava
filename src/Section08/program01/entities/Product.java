@@ -1,4 +1,4 @@
-package Section08.program01.application;
+package Section08.program01.entities;
 
 public class Product {
 
@@ -10,8 +10,8 @@ public class Product {
         return price*quantity;
     }
 
-    public void addProduct(int quantity){
-        this.quantity += quantity;
+    public void addProduct(int add){
+        this.quantity += add;
     }
 
     public void removeProduct(int quantity){

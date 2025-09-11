@@ -21,7 +21,7 @@ public class base_poo {
 
         System.out.println("Área = "+ x.area());
 
-
+        input.close();
     }
 
 

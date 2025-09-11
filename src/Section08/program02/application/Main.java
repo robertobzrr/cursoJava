@@ -4,7 +4,7 @@ import Section08.program02.entities.Triangulo;
 
 import java.util.Scanner;
 
-public class Program {
+public class Main {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
@@ -30,5 +30,6 @@ public class Program {
         System.out.printf("Área do Quadrado: %.2f%nÁrea do Triângulo: %.2f", q.areaQuadrado(), t.areaTriangulo());
 
 
+        input.close();
     }
 }
