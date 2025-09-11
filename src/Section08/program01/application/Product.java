@@ -1,4 +1,4 @@
-package Section08.entities;
+package Section08.program01.application;
 
 public class Product {
 

@@ -1,6 +1,6 @@
-package Section08.application;
+package Section08.program01.entities;
 
-import Section08.entities.Product;
+import Section08.program01.application.Product;
 
 import java.util.Scanner;
 
