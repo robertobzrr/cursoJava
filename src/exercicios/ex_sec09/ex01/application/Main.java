@@ -12,11 +12,16 @@ public class Main {
         System.out.println("========== CADASTRO BANCÁRIO ==========");
 
         System.out.print("N° da Conta: ");
-        account.numeroConta = input.nextInt();
+        int numeroConta = input.nextInt();
+        account.setNumeroConta(numeroConta);
         input.nextLine();
 
+
         System.out.print("Nome do Cliente: ");
-        account.donoConta = input.nextLine();
+        String donoConta = input.nextLine();
+        account.setDonoConta(donoConta);
+
+
 
         System.out.println("\nDejesa fazer um deposito incial?\n[1] - Sim\n[0] - Não");
         int depositoInicial = input.nextInt();
@@ -24,26 +29,29 @@ public class Main {
 
             if (depositoInicial == 1){
                 System.out.print("Valor: ");
-                account.depositoInicial = input.nextDouble();
+                double deposito = input.nextDouble();
+                account.setDepositoInicial(deposito);
                 input.nextLine();
+
             }else{
-                account.depositoInicial = 0;
+                int deposito = 0;
+                account.setDepositoInicial(deposito);
             }
 
 
-        System.out.printf("%n=========================%nNº da conta: %d%nDono: %s%nSaldo: %.2f %n=========================%n%n", account.numeroConta, account.donoConta, account.depositoInicial);
+        System.out.printf("%n=========================%nNº da conta: %d%nDono: %s%nSaldo: %.2f %n=========================%n%n", account.getNumeroConta(), account.getDonoConta(), account.getDepositoInicial());
 
 
         System.out.print("Novo Depósito: ");
         double novoDep = input.nextDouble();
         account.novoDeposito(novoDep);
-        System.out.printf("%n=========================%nNº da conta: %d%nDono: %s%nSaldo: %.2f %n=========================%n%n", account.numeroConta, account.donoConta, account.depositoInicial);
+        System.out.printf("%n=========================%nNº da conta: %d%nDono: %s%nSaldo: %.2f %n=========================%n%n", account.getNumeroConta(), account.getDonoConta(), account.getDepositoInicial());
 
 
         System.out.print("Saque: ");
         double saque = input.nextDouble();
         account.novoSaque(saque);
-        System.out.printf("%n=========================%nNº da conta: %d%nDono: %s%nSaldo: %.2f %n=========================%n%n", account.numeroConta, account.donoConta, account.depositoInicial);
+        System.out.printf("%n=========================%nNº da conta: %d%nDono: %s%nSaldo: %.2f %n=========================%n%n", account.getNumeroConta(), account.getDonoConta(), account.getDepositoInicial());
 
 
 
