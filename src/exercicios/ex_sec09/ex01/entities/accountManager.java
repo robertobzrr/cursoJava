@@ -3,42 +3,50 @@ package exercicios.ex_sec09.ex01.entities;
 
 public class accountManager {
 
-    private int numeroConta;
+    private final int numeroConta;
     private String donoConta;
-    private double depositoInicial;
+    private double saldo;
 
+
+    public accountManager(int numeroConta, String donoConta, double depositoInicial) {
+        this.numeroConta = numeroConta;
+        this.donoConta = donoConta;
+        deposito(depositoInicial);
+    }
+
+    public accountManager(int numeroConta, String donoConta) {
+        this.numeroConta = numeroConta;
+        this.donoConta = donoConta;
+    }
 
 
     public int getNumeroConta() {
         return numeroConta;
     }
-    public void setNumeroConta(int numeroConta) {
-        this.numeroConta = numeroConta;
-    }
-
     public String getDonoConta() {
         return donoConta;
     }
     public void setDonoConta(String donoConta) {
         this.donoConta = donoConta;
     }
-
     public double getDepositoInicial() {
-        return depositoInicial;
-    }
-    public void setDepositoInicial(double deposito) {
-        this.depositoInicial = deposito;
+        return saldo;
     }
 
 
 
-    public void novoDeposito(double novoDep){
-        this.depositoInicial += novoDep;
+
+    public void deposito(double deposito){
+        this.saldo += deposito;
     }
 
-    public void novoSaque(double saque){
-        this.depositoInicial -= saque;
+    public void saque(double saque){
+        this.saldo -= saque+5;
     }
+
+
+    //dúvida para levar na aula: como o metodo deposito no construtor pode estar enviando a variavel depositoInicial
+    // para o metodo deposito se no metodo ele ta recebendo double deposito, como é possivel e como o java entende o envio de deposito(depositoIncial) para deposito(double deposito)
 
 
 }
